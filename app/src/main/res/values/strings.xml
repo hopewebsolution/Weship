@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name">We ship</string>
+    <string name="user_db">user_db</string>
+    <string name="login_db">login_db</string>
+    <string name="is_login">is_login</string>
+    <string name="name">name</string>
+    <string name="error">oops error</string>
+    <string name="done">OK</string>
+    <string name="name_empty_msg">You have not entered full name</string>
+    <string name="email_empty_msg">You have enter wrong email address</string>
+    <string name="mobile_empty_msg">You have enter  wrong mobile no</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="not_a_mamber">Not a member?</string>
+    <string name="signup">Signup Now</string>
+    <string name="sign_in">Sign In</string>
+    <string name="pass_empty_msg">You have enter wrong or empty password</string>
+    <string name="not_match">Your entered confirm password not match with password</string>
+    <string name="have_member">I already have a membership</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="re_password">Retype Password</string>
+    <string name="signup_n">Sign up</string>
+    <string name="register">Register</string>
+    <string name="i_am_a">I AM A...</string>
+    <string name="customer">CUSTOMER</string>
+    <string name="broker">BROKER/DEALERSHIP</string>
+    <string name="i_want_to_ship_one_or_more_of_my_own_vehicles">I want to ship one or more of my own vehicles</string>
+    <string name="i_want_to_connect_customers_to_carriers_in_my_network">I want to connect customers to carriers in my network</string>
+    <string name="carrier">CARRIER</string>
+    <string name="i_want_to_ship_customer_vehicles_and_organize_my_trips">I want to ship customer vehicles and organize my trips</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="what">What would like to do ?</string>
+    <string name="select_services">Select a service  type to get  started</string>
+    <string name="new_vehicle">Ship new vehicles</string>
+    <string name="manange_shipment">Manage Shipment</string>
+    <string name="you_are_good_to_go">You are good to go !</string>
+    <string name="thanks_for_using_weship">Thanks for  using Weship</string>
+    <string name="shiping_detail">Shipping Details</string>
+    <string name="transporting_a_2013_toyoto_carolla_vin_12345678_on_july16_2018">Transporting a 2013 Toyoto Carolla (VIN# 12345678) On July16,2018</string>
+    <string name="tack_me_back">Tack me back</string>
+    <string name="where_are_you_headed">Where Are You headed?</string>
+    <string name="orgin">Origin</string>
+    <string name="destion">Destination</string>
+    <string name="vehicel_info">VEHICLE INFO</string>
+    <string name="is_it_drivable">Is it drivable?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="Submit">Submit</string>
+    <string name="delivery_confirmation">Delivery Confirmation</string>
+    <string name="is_this_is_correct">Is this is correct?</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="company">Company</string>
+    <string name="bid">BIDS</string>
+    <string name="summary">Summary</string>
+    <string name="truck_tracking">Truck Tracking</string>
+    <string name="list_view">List View</string>
+    <string name="api_key">AIzaSyCK3CiBB0GX-69eyJLjhjwiNwuRpRgD00g</string>
+    <string name="date_available_to_ship">Date Available to Ship</string>
+    <string name="setting">Setting</string>
+    <string name="my_profile">My Profile</string>
+    <string name="log_out">Logout</string>
+    <string name="search_truck">Search Truck Space</string>
+    <string name="post_vehicle">Post vehicle</string>
+    <string name="manange_listing">Managne Listing</string>
+    <string name="by_location">By location</string>
+    <string name="fileter_by_zip">-Filter by ZIP or State</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop">Drop Location</string>
+    <string name="by_cargo">By Cargo</string>
+    <string name="fileter_by_vehicle">Flter by vehicle type,drivability,or # of vehicles.</string>
+    <string name="or_vehicle"># of vehicles</string>
+    <string name="go_back">Go Back</string>
+    <array name="keys">
+        <item>AIzaSyBrvkHSSNuUCh7gIq-RSUYun9N_E_b0BJA</item>
+        <item>AIzaSyD5AxceRhB2xYclgtfirEV3z5unTP-dd18</item>
+        <item>AIzaSyCHYaHZ-DyTIPkm9gpPibchcWl_fy7JTYs</item>
+        <item>AIzaSyBGYI0yz_tkeBwiwvHjJ_azEdj4ko44qYg</item>
+        <item>AIzaSyAmKHAd-NlWEfgOcztZ9Tj93fr3ccB6630</item>
+    </array>
+    <array name="type">
+        <item>Select One or Vehicles type</item>
+        <item>All type</item>
+        <item>ATV</item>
+        <item>Boat</item>
+        <item>Car</item>
+        <item>Heavy Equipment</item>
+    </array>
+    <array name="pay_type">
+        <item>Select One Payment type</item>
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+        <item>PayUmoney</item>
+        <item>Cash</item>
+    </array>
+    <array name="days">
+        <item>1 days</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>4 days</item>
+        <item>5 days</item>
+        <item>6 days</item>
+        <item>7 days</item>
+        <item>8 days</item>
+        <item>9 days</item>
+        <item>10 days</item>
+        <item>11 days</item>
+        <item>12 days</item>
+        <item>13 days</item>
+        <item>14 days</item>
+        <item>15 days</item>
+        <item>16 days</item>
+        <item>17 days</item>
+        <item>18 days</item>
+        <item>19 days</item>
+        <item>20 days</item>
+    </array>
+    <array name="result">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </array>
+    <array name="status">
+        <item>All status</item>
+        <item>Off</item>
+        <item>On</item>
+    </array>
+    <array name="sortby">
+        <item>Org/Des</item>
+        <item>Can Drive</item>
+        <item>Ship By</item>
+    </array>
+    <string name="search_vehicle">SEARCH VEHICLES</string>
+    <string name="manage_shipment">MANAGE MY SHIPMENTS</string>
+    <string name="truck_space">POST TRUCK SPACE</string>
+    <string name="roadrunner_auto">ROADRUNNER AUTO TRANSPORT</string>
+    <!--<string name="go_back">go back</string>-->
+    <string name="track_order">track order</string>
+    <string name="ship_score">ship score</string>
+    <string name="recom_frd">would recommend to a friend</string>
+    <string name="satisfd_services">were satisfied with service</string>
+    <string name="libl_money">&#36;250,000</string>
+    <string name="libl_money_text">liability insurance</string>
+    <string name="pick_date">4/15/2018</string>
+    <string name="pick_date_text">pick-up date</string>
+    <string name="estimate_date">4/20/2018</string>
+    <string name="estimate_date_text">estimated arrival</string>
+    <string name="review">review</string>
+    <string name="comment_text">Does the job Good app, like uber cabs. U &#36; free credit</string>
+    <string name="custmer_name">Jonthan Scott</string>
+    <string name="cust_cmt_date">Decemeber 24,2017</string>
+    <string name="truck_tracker">truck tracker</string>
+    <string name="driver_name">name</string>
+    <string name="location">location</string>
+    <string name="drive_time">drive time</string>
+    <string name="last_activity">last activity</string>
+    <string name="search_result">search result</string>
+    <string name="origin_dest">origin -&#62; destination</string>
+    <string name="veh_type">veh type</string>
+    <string name="can_drive">can drive</string>
+    <string name="of_veh">&#35; of veh</string>
+    <string name="ship_by">ship by</string>
+    <string name="miles">miles</string>
+    <string name="mk_offer">make offer</string>
+    <string name="add_bid">bid</string>
+    <string name="add_bids">Add Bid</string>
+    <string name="edit_bid">edit bid</string>
+    <string name="customers">customer</string>
+    <string name="vehicle">vehicle</string>
+    <string name="veh_info">2013 Toyoto Corolla &#40; Black &#41; VIN &#35;123456 Engine Runs</string>
+    <string name="origin">271 Ringroad, Ridgewood,NJ 07450 </string>
+    <string name="destination">271 Aburoad, Ridgewood,NJ 07450 </string>
+    <string name="bid_price">bid price</string>
+    <string name="bid_price_txt">&#36;1.75</string>
+    <string name="ppm">price per mile</string>
+    <string name="flat_price">flat price</string>
+    <string name="pickup_date">pickup date</string>
+    <string name="pickup_date_txt">&#47;7&#47;21&#47;18 &#45; morning</string>
+    <string name="eta">eta</string>
+    <string name="eta_date">&#47;7&#47;28&#47;18 &#45; morning</string>
+    <string name="time">24 hour</string>
+    <string name="exp_time">expires in</string>
+    <string name="map_view">map view</string>
+    <string name="num_3">3</string>
+    <string name="num_2">2</string>
+    <string name="num_4">4</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="active_bids">active bids</string>
+    <string name="mk_mdl">make &#38; model</string>
+    <string name="view_bids">view bids</string>
+    <string name="dispatch_center">dispatch center</string>
+    <string name="search_vehical">search vehicles</string>
+    <string name="search_for">search for</string>
+    <string name="search">Search</string>
+    <string name="avaliable_truck">available truck space</string>
+    // broker
+    <string name="delivery">Delivery</string>
+    <string name="Car_info">Car Info</string>
+    <string name="truck">Trucks</string>
+    <string name="departs">Departs</string>
+    <string name="of_spce">#of spaces</string>
+    <string name="traler_type">Trailer Type</string>
+    <string name="post_trck_space">post truck space</string>
+    <string name="add_location_details">Add Location Details</string>
+    <string name="originn">Origin</string>
+    <string name="destinatinpoint">Destination</string>
+    <string name="add_cargo">Add CArgo</string>
+    <string name="vehicle_type">Vehical Type</string>
+    <string name="add_date_price">Add Date/Price Filters</string>
+    <string name="ready_to_ship">Ready To Ship Within</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="min_pay">MInimum Total Pay</string>
+    <string name="pay_per_vehicle">MInumum Pay Per Vehicle</string>
+    <string name="avail_space">Avialable Space</string>
+    <string name="post">Post</string>
+    <string name="my_bids">My bids</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="find_shipment">FInd Shipment</string>
+    <string name="filter_by_region">Filter by region or state</string>
+    <string name="filter_by_vehtype">FIlter by vehicle type or vehicles</string>
+    <string name="min_vehicles">MIn # of vehicles</string>
+    <string name="max_vehicle">Max # of vehicles</string>
+    <string name="by_date_price">By date/price</string>
+    <string name="filter_by_shipdate">Filter by ship date</string>
+    <string name="save_search">Save search?</string>
+    <string name="dest">DEst</string>
+    <string name="org">Orig &#47; Dest</string>
+    <string name="bid_details"><![CDATA[bid &#35; 1234567]]></string>
+    <string name="bid_start">BId Start</string>
+    <string name="cs_name">Joe adam</string>
+    <string name="view">View</string>
+    <string name="orgin_des">Org  Des</string>
+    <string name="del_window">Delivery Window</string>
+    <string name="vw_carrier">VIew Carrier</string>
+    <string name="title_activity_map_activity">Map</string>
+    <string name="show_on_map">Show  on MAp</string>
+</resources>

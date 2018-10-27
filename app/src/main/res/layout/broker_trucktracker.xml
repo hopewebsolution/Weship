@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:onClick="click"
+                    android:orientation="horizontal">
+
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:text="@string/truck_tracker"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/back_button"
+                        android:padding="@dimen/ten_dp"
+                        android:src="@drawable/ic_arrow_back" />
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:gravity="center|start"
+                        android:paddingStart="@dimen/ten_dp"
+                        android:text="@string/go_back"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="right">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/back_button"
+                        android:padding="@dimen/ten_dp"
+                        android:src="@drawable/ic_navigator" />
+
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:id="@+id/mapview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center|start"
+                        android:paddingStart="@dimen/ten_dp"
+                        android:text="@string/map_view"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_margin="@dimen/ten_dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".40"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    android:background="@drawable/button_shape"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/five_dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/truck_tracker" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/editText1"
+                        android:layout_alignRight="@+id/editText1"
+                        android:layout_alignTop="@+id/editText1"
+                        android:padding="@dimen/five_dp"
+                        android:src="@drawable/ic_search_black" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".30"
+                    android:background="@drawable/button_shape">
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".20"
+                    android:background="@drawable/button_shape">
+
+                    <ImageView
+                        android:id="@+id/autorenew"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_autorenew" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_margin="@dimen/ten_dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".20">
+
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".20">
+
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/driver_name"
+                        android:gravity="center"
+                        android:textAllCaps="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".20">
+
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/location"
+                        android:gravity="center"
+                        android:textAllCaps="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".20">
+
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/drive_time"
+                        android:gravity="center"
+                        android:textAllCaps="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".20">
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/last_activity"
+                        android:gravity="center"
+                        android:textAllCaps="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/black" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/ten_dp"
+                android:id="@+id/my_recycler_view"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

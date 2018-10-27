@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_pin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.weship.mover.Fontclasses.Weshiptextviewbold
+                android:id="@+id/place_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sodala"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <com.weship.mover.Fontclasses.Weshiptextviewregular
+                android:id="@+id/sub_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shubhash Nager bani Park  Sodala Jaipur"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+</LinearLayout>

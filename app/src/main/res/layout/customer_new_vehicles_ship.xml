@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.weship.mover.Fontclasses.Weshiptextviewbold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/where_are_you_headed"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/back_button"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:text="Go Back"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_black"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_icon" />
+
+                <com.weship.mover.Fontclasses.Weshiptextviewbold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ic_arrow_forward"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:text="@string/orgin"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <com.weship.mover.Fontclasses.Weshiptextviewbold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:text="@string/destion"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ten_dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/circle_gree" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:background="@color/black" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/circle_red" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/source"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/unfiled_soruce"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:weightSum="1">
+
+                        <com.weship.mover.Fontclasses.Weshiptextviewregular
+                            android:id="@+id/txt_solurce"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center|start"
+                            android:hint="@string/orgin"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_navigator_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/source"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/unfiled_soruce"
+                        android:gravity="center|start"
+                        android:orientation="horizontal"
+                        android:paddingLeft="25dp"
+                        android:weightSum="1">
+
+                        <com.weship.mover.Fontclasses.Weshiptextviewregular
+                            android:id="@+id/destination"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center|start"
+                            android:hint="@string/destion"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_arrow_forward_white" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_black"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_sedan_car_model" />
+
+                    <com.weship.mover.Fontclasses.Weshiptextviewbold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:text="@string/vehicel_info"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <com.weship.mover.Fontclasses.Weshiptextviewbold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/is_it_drivable"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/button_border_normal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/ll_yes"
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.weship.mover.Fontclasses.Weshiptextviewregular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/yes"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_no"
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_border_activie2"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <com.weship.mover.Fontclasses.Weshiptextviewregular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/no"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/vin"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/unfiled_soruce"
+                            android:gravity="center|start"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <com.weship.mover.Fontclasses.Weshipedittextregular
+                                android:id="@+id/edt_vin"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Vin#"
+                                android:paddingLeft="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_navigator_gray" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/year"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/unfiled_soruce"
+                            android:gravity="center|start"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <com.weship.mover.Fontclasses.Weshiptextviewregular
+                                android:id="@+id/txt_year"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="center|start"
+                                android:hint="Year"
+                                android:paddingLeft="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_calendar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/type"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/unfiled_soruce"
+                            android:gravity="center|start"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <com.weship.mover.Fontclasses.Weshipedittextregular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Vehicle type"
+                                android:paddingLeft="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_sedan" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/unfiled_soruce"
+                            android:gravity="center|start"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <com.weship.mover.Fontclasses.Weshiptextviewregular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="center|start"
+                                android:hint="@string/date_available_to_ship"
+                                android:paddingLeft="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_calendar" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
+                    android:text="@string/Submit"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
